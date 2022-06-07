@@ -1,2 +1,2 @@
-# Stat-Marker.github.io
+# StatMarker.github.io
 Myhostsite
