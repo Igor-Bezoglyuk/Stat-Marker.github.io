@@ -1,0 +1,492 @@
+body{
+margin:0px;
+font-family: Roboto, Arial, sans-serif, monospace;
+}
+
+header{
+position: relative;
+width: 100%;
+height: auto;
+}
+.header-blocks{
+position:relative;
+
+}
+.header-logo{
+position:relative;
+margin-right:10px;
+padding-right: 20px;
+border-right:solid 2px #c5c5c5;
+img{
+position:relative;
+width: 100%;
+object-fit: cover;
+}
+}
+.header-obout{
+position:relative;
+width: 100%;
+height: 100%;
+h6{
+position:relative;
+font-size:12px;
+font-weight: 400;
+margin: 0px;
+}
+}
+
+.header-nav{
+position:relative;
+width: 100%;
+height: 100%;
+}
+.active{
+&::before{
+content:"\25BC";
+position:absolute;
+top: 0;
+right: 0%;
+font-size: 13px;
+transform: translate(22px, 7px);
+}
+}
+
+.header-menu{
+position:relative;
+width: 100%;
+height: 100%;
+list-style: none;
+padding:0px;
+margin:0px;
+li{
+position:relative;
+font-size: 20px;
+font-weight: 400;
+text-align: center;
+display: inline-block;
+margin:10px 1vw;
+a{
+position:relative;
+text-decoration: none;
+color: black;
+}
+}
+}
+.Drop-menu{
+position:absolute;
+width:200px;
+height: auto;
+background:white;
+border:solid 1px purple;
+list-style: none;
+padding:0px;
+transition: 0.4s;
+z-index: 9;
+opacity: 0;
+border-radius: 0px 0px 20px 20px;
+box-shadow: -17px 20px 10px -18px grey;
+}
+
+.Drop-li{
+position:relative;
+font-size: 20px;
+font-weight: 300;
+text-align: center;
+display: none;
+padding:20px;
+border-bottom:solid 1px lightgrey;
+}
+
+.Drop-silka{
+position:relative;
+text-decoration: none;
+color:black;
+transition: 0.4s;
+&:hover{
+color:#CF51CE;
+}
+}
+
+.header-menu:hover .Drop-menu {
+  opacity: 1;
+}
+
+.header-phone-singin{
+position:relative;
+display: inline-block;
+}
+.header-singin{
+float:right;
+}
+
+.heder-phone{
+position:relative;
+font-size: 24px;
+font-weight: 400;
+color: black;
+text-decoration: none;
+}
+.floatend{
+float:right;
+}
+.header-knopka-login{
+position:relative;
+width: 147px;
+padding: 5px 28px;
+border:none;
+border-radius:12px;
+background: #CF51CE;
+color: white;
+text-align: right;
+font-size:20px;
+font-weight: 400;
+outline: none;
+transition: 0.4s;
+&:focus{
+box-shadow: none;
+}
+&::before{
+content:"";
+position:absolute;
+top: 0;
+left:0px;
+width: 20px;
+height: 20px;
+background:url("../img/Icon.png") no-repeat 50% 50%/cover;
+transform: translate(34px, 10px);
+}
+}
+
+.Open-phone-menu{
+position:relative;
+display: none;
+width: 50px;
+height: 50px;
+img{
+position:relative;
+width: 100%;
+object-fit: cover;
+}
+}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+.ModalMenu-phone{
+position:fixed;
+top: 0;
+right: 0%;
+width:300px;
+height: 100%;
+background:white;
+border:solid 1px purple;
+z-index: 999;
+display: none;
+}
+.Modal-Menu{
+position:relative;
+width: 100%;
+height: auto;
+padding:0px;
+list-style: none;
+}
+.Modal-li{
+position:relative;
+font-size: 20px;
+font-weight:300;
+text-align: center;
+display: block;
+border-bottom: solid 2px #efefef;
+padding: 15px;
+}
+.Modal-silka{
+position:relative;
+text-decoration:none;
+color:black;
+transition: 0.4s;
+&:hover{
+color:#CF51CE;
+}
+}
+
+
+.Modal-Drop-menu{
+position:relative;
+width:100%;
+height: auto;
+background:white;
+list-style: none;
+padding:0px;
+transition: 0.4s;
+display: none;
+}
+
+.Modal-Drop-li{
+position:relative;
+font-size: 20px;
+font-weight: 300;
+text-align: center;
+display: block;
+padding:20px;
+border-bottom:solid 1px lightgrey;
+}
+
+.Modal-Drop-silka{
+position:relative;
+text-decoration: none;
+color:black;
+transition: 0.4s;
+&:hover{
+color:#CF51CE;
+}
+}
+
+.modal-phone{
+position:relative;
+width: 100%;
+height: auto;
+padding:20px;
+}
+.modal-heder-phone{
+position:relative;
+font-size: 24px;
+font-weight: 400;
+color: black;
+text-decoration: none;
+b{
+color: #CF51CE;
+}
+}
+
+.active-modal{
+&::before{
+content:"\25BC";
+position:absolute;
+top: 0;
+right: 0%;
+font-size: 13px;
+transform: translate(-77px, 21px);
+}
+}
+
+
+/*_____________________________________________________________________________________________________________*/
+
+#Content{
+position:relative;
+width: 100%;
+height: auto;
+}
+.Content-block{
+position:relative;
+justify-content:center;
+}
+.Content-blocks {
+position:relative;
+}
+.Content-blocks-title{
+position:relative;
+font-size:46px;
+font-weight:700;
+color: black;
+b{
+color: #CF51CE;
+}
+}
+
+.Content-prace-img{
+position:relative;
+width:50px;
+height: 50px;
+object-fit: cover;
+}
+
+.Content-prise-text{
+position:relative;
+font-size:20px;
+font-weight:600;
+color: black;
+b{
+color: #CF51CE;
+}
+}
+
+.Content-block-img{
+position:relative;
+width: 100%;
+height: 100%;
+background:url("../img/Bg stars.svg") no-repeat 50% 50%/cover;
+img{
+position:relative;
+width: 100%;
+object-fit: cover;
+}
+}
+
+/*_____________________________________________________________________________________________________________*/
+
+#Content2{
+position:relative;
+width: 100%;
+height: auto;
+}
+.Content2-title{
+position:relative;
+width: 75%;
+font-size:48px;
+font-weight:700;
+color: black;
+margin:0 auto;
+}
+.Content2-blocks{
+position:relative;
+display: flex;
+align-items: center;
+padding-bottom: 50px;
+img{
+position:relative;
+width: 350px;
+height: 100%;
+object-fit: cover;
+}
+p{
+position:relative;
+font-weight:400;
+font-size:20px;
+text-align: left;
+}
+}
+
+/*_____________________________________________________________________________________________________________*/
+
+#Content3{
+position:relative;
+width: 100%;
+height: auto;
+}
+.Content3-Title{
+position:relative;
+font-size:48px;
+font-weight: 700;
+width: 75%;
+margin: 0 auto;
+b{
+color:#CF51CE;
+}
+span{
+position:relative;
+&::before{
+content: "";
+position:absolute;
+bottom:0px;
+width: 100%;
+height: 6px;
+border-radius:5px;
+background: linear-gradient(264.91deg, #7C4EAB 0.73%, #DD51D4 95.85%);
+}
+}
+}
+.Content2-lockstroka{
+position:relative;
+font-size: 25px;
+font-weight: 300;
+width: 50%;
+margin: 0 auto;
+}
+
+.Content3-blocks{
+position:relative;
+text-align: left;
+h6{
+position:relative;
+font-size:25px;
+font-weight: 700;
+}
+p{
+position:relative;
+font-size: 17px;
+font-weight: 300;
+}
+}
+.Content3-blocks-img{
+position:relative;
+width: 80px;
+height: 80px;
+background:#CF51CE;
+border-radius: 15px;
+box-shadow: 0px 4px 25px rgba(234, 93, 187, 0.25);
+margin-bottom: 20px;
+img{
+position:relative;
+width: 100%;
+object-fit: cover;
+padding:10px;
+}
+}
+
+/*_____________________________________________________________________________________________________________*/
+
+footer{
+position:relative;
+width: 100%;
+height: auto;
+}
+.footer-block{
+position:relative;
+border-top: solid 1px black;
+}
+.footer-blocks{
+position:relative;
+width: 100%;
+h6{
+position:relative;
+font-size: 15px;
+font-weight: 700;
+color:#CF51CE;
+padding:50px;
+}
+}
+
+/*_____________________________________________________________________________________________________________*/
+
+@media only screen and (max-width: 1199px){
+.header-menu-none, .heder-phone,.header-obout{display: none;}
+.header-singin{float:none;}
+.Open-phone-menu{display: block; float:right;}
+.floatend{float:none;}
+
+#Content{background: url("../img/Superman.svg") no-repeat 145% 50%/550px;}
+.Content-block{justify-content: normal;}
+.Content-blocks{}
+.Content-blocks-absolute{display: none;}
+}
+
+@media only screen and (max-width: 990px){
+.Content2-blocks{flex-direction: column;}
+.reverse{flex-direction: column-reverse;}
+.Content2-blocks-img{margin: 50px;}
+.Content2-title,.Content3-Title,.Content2-lockstroka{width: 100%;}
+}
+
+@media only screen and (max-width: 794px){
+#Content{background: url("../img/Superman.svg") no-repeat 155% 50%/450px;}
+}
+
+@media only screen and (max-width: 636px){
+#Content{background: url("../img/Superman.svg") no-repeat 137% 20%/354px;}
+.Content-blocks-title{width:250px;}
+}
+
+@media only screen and (max-width:575px){
+body{position: absolute;}
+.Content3-blocks{text-align: center;}
+.Content3-blocks-img{margin: 0 auto;}
+.Content3-blocks-title{margin-top: 20px;}
+.header-blocks{width: 50%;}
+.header-logo{padding: 0px; border:none;}
+.Content3-block{padding: 10px;}
+}
+@media only screen and (max-width: 472px){
+#Content{background: url("../img/Superman.svg") no-repeat 167% 15%/285px;}
+.Content-blocks-title{width:250px; font-size: 31px;}
+}
